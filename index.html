@@ -838,27 +838,269 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="card">
-        <div class="contact-form">
+   <!-- My Interests Section - Pure HTML/CSS -->
+<section id="interests">
+  <h2 class="section-title">Passions That Power My Work</h2>
+  <p class="interests-intro">
+    My curiosity extends beyond code - these interests fuel my professional growth and technical creativity.
+  </p>
+  
+  <div class="interests-grid">
+    <!-- Technical Innovation Card -->
+    <div class="interest-card tech-innovation">
+      <h4><i class="bi bi-cpu"></i> Technical Innovation</h4>
+      <ul>
+        <li><span class="highlight">Emerging Tech:</span> Hands-on with AI/ML applications and cloud-native architectures</li>
+        <li><span class="highlight">Open Source:</span> Contribute to projects that solve real-world problems</li>
+        <li><span class="highlight">System Design:</span> Passionate about building scalable, resilient architectures</li>
+        <li><span class="highlight">DevOps:</span> Automating workflows for efficiency and reliability</li>
+      </ul>
+    </div>
+    
+    <!-- Problem Solving Card -->
+    <div class="interest-card performance">
+      <h4><i class="bi bi-graph-up-arrow"></i> Performance Optimization</h4>
+      <ul>
+        <li><span class="highlight">Algorithm Challenges:</span> Regular practice on LeetCode and HackerRank</li>
+        <li><span class="highlight">Debugging:</span> Enjoy unraveling complex system issues</li>
+        <li><span class="highlight">Code Quality:</span> Advocate for clean, maintainable solutions</li>
+        <li><span class="highlight">Metrics-Driven:</span> Focus on measurable system improvements</li>
+      </ul>
+    </div>
+    
+    <!-- Continuous Learning Card -->
+    <div class="interest-card learning">
+      <h4><i class="bi bi-journal-code"></i> Continuous Learning</h4>
+      <ul>
+        <li><span class="highlight">Tech Research:</span> Stay current through whitepapers and case studies</li>
+        <li><span class="highlight">Community:</span> Active in local developer meetups and hackathons</li>
+        <li><span class="highlight">Mentorship:</span> Both learning from and teaching others</li>
+        <li><span class="highlight">Certifications:</span> Pursuing AWS/GCP and Kubernetes certifications</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="interests-bottom-grid">
+    <!-- Professional Philosophy -->
+    <div class="interest-philosophy">
+      <h4><i class="bi bi-lightning-charge-fill"></i> My Development Philosophy</h4>
+      <blockquote>
+        "I view technology as a tool for empowerment - whether through mentoring, open source, or building systems that improve lives."
+      </blockquote>
+      <div class="philosophy-points">
+        <p><i class="bi bi-check-circle"></i> Build solutions, not just code</p>
+        <p><i class="bi bi-check-circle"></i> Quality over quick fixes</p>
+        <p><i class="bi bi-check-circle"></i> Collaboration breeds innovation</p>
+      </div>
+    </div>
+    
+    <!-- Personal Interests -->
+    <div class="personal-interests">
+      <h4><i class="bi bi-people-fill"></i> Beyond the Keyboard</h4>
+      <p>Activities that inspire fresh perspectives:</p>
+      <div class="interest-tags">
+        <span class="tag"><i class="bi bi-globe2"></i> Tech Conferences</span>
+        <span class="tag"><i class="bi bi-book"></i> Sci-Fi Books</span>
+        <span class="tag"><i class="bi bi-music-note-beamed"></i> Electronic Music</span>
+        <span class="tag"><i class="bi bi-controller"></i> Game Dev</span>
+      </div>
+      <p class="fun-fact"><i class="bi bi-lightbulb"></i> Fun fact: I solve coding problems while hiking!</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* INTERESTS SECTION STYLES */
+  #interests {
+    padding: 4rem 2rem;
+    background: rgba(13, 13, 35, 0.7);
+    backdrop-filter: blur(10px);
+  }
+  
+  .interests-intro {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .interest-card {
+    background: rgba(30, 30, 60, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    border-top: 4px solid;
+  }
+  
+  .interest-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tech-innovation {
+    border-color: #6a11cb;
+  }
+  
+  .performance {
+    border-color: #ff00ff;
+  }
+  
+  .learning {
+    border-color: #2575fc;
+  }
+  
+  .interest-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  
+  .interest-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .interest-card li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.8rem;
+    line-height: 1.5;
+  }
+  
+  .interest-card li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #ff00ff;
+  }
+  
+  .highlight {
+    color: #2575fc;
+    font-weight: 600;
+  }
+  
+  .interests-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .interest-philosophy, .personal-interests {
+    background: rgba(30, 30, 60, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    background: rgba(106, 17, 203, 0.1);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 3px solid #6a11cb;
+    margin: 1.5rem 0;
+  }
+  
+  .philosophy-points p {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .philosophy-points i {
+    color: #6a11cb;
+  }
+  
+  .interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.5rem 0;
+  }
+  
+  .tag {
+    background: rgba(106, 17, 203, 0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .fun-fact {
+    background: rgba(37, 117, 252, 0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .interests-grid, .interests-bottom-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .interest-card {
+      padding: 1.5rem;
+    }
+  }
+</style>
+
+    <!-- Let's Connect Section -->
+    <section id="connect">
+      <h2 class="section-title">Let's Connect</h2>
+      <p style="max-width: 600px; margin-bottom: 2rem; color: #bbb;">
+        I'm always interested in discussing any technological related issues. Feel free to reach out!
+      </p>
+      <div class="connect-grid">
+        <div class="card contact-info">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li><i class="bi bi-envelope-fill" style="color: #2563eb;"></i> Email: livingstoneoduory@gmail.com</li>
+            <li><i class="bi bi-phone-fill" style="color: #10b981;"></i> Phone: +254 721373455</li>
+            <li><i class="bi bi-geo-alt-fill" style="color: #d946ef;"></i> Location: Nairobi, Kenya</li>
+          </ul>
+          <p>Follow Me</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p style="font-size: 0.9rem; color: #bbb; margin-top: 1rem;">
+            follow me for more updates on my projects and tech insights.
+          </p>
+        </div>
+        <div class="card contact-form">
+          <h3>Send a Message</h3>
           <form>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" required>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject">
+              <input type="text" id="subject" placeholder="What's this about?">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" required></textarea>
+              <textarea id="message" placeholder="Tell me more" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%;">
               <i class="bi bi-send"></i> Send Message
